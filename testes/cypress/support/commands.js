@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login', (username, senha) => {
+    cy.get('#username').type(username)
+    cy.get('#password').type(senha)
+    cy.get('.btn-primary').click()
+})
+
+import './commands'
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // returning false here prevents Cypress from failing the test
+  return false
+})
+

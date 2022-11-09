@@ -16,5 +16,9 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+import 'cypress-mochawesome-reporter/register';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+//Run npm i @walmyr-filho/cy-press -D to install it as a dev dependency.
+import '@walmyr-filho/cy-press'
