@@ -24,4 +24,4 @@ mvn test -Dtest=trabalhoRunner
 ```
 
 ## Passo a passo de como acessar o relatório de testes:
-- 1- Localize o arquivo html gerado com o nome "trabalho2" e abra no seu navegador.
+- 1- Localize o arquivo html gerado na pasta "karate-reports" com o nome "trabalho2" e abra no seu navegador.
